@@ -1,0 +1,15 @@
+.blue-box {
+  height: 300px;
+  width: 500px;
+  background-color: blue;
+
+  .red-circle {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+  }
+}
