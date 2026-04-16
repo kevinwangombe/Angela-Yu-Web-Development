@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Learning</title>
+    <style>
+      /* .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 200px 200px;
+        gap: 30px;
+
+        .first {
+          grid-column: 2 span;
+        }
+
+        .card {
+          background-color: blue;
+        }
+      } */
+
+      .grid-container {
+        display: flex;
+        background-color: black;
+
+        .card {
+          background: blue;
+          border: 30px solid white;
+          height: 100px;
+          flex: 1; /*to have the same with space for all the cards*/
+        }
+
+        .first {
+          flex: 2; /*to have the first card take up twice as much space as the other cards. It will be twice as wide as the other cards, while the other cards will each take up an equal amount of space.*/
+        }
+
+        .second {
+          flex: 0.5; /*to have the second card take up half as much space as the other cards. It will be half as wide as the other cards, while the other cards will each take up an equal amount of space.*/
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="first card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+  </body>
+</html>
